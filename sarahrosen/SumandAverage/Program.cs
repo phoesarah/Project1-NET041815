@@ -15,6 +15,8 @@ namespace SumandAverage
             double sum = 0;
             double average = 0.0;
             double count = 0;
+           /* this is original program 
+            * 
             for (double i = 1; i <= upperbound; i++)
             {
                 sum = sum + i;
@@ -24,17 +26,20 @@ namespace SumandAverage
             average = sum / count;
             Console.WriteLine("The sum is " + Convert.ToString(sum));
             Console.WriteLine("The Average is " + Convert.ToString(average));
-            Console.ReadLine();
-
-            Double c = 0;
-            while (c < upperbound)
+            Console.ReadLine();  */
+            
+            double i = 1;
+            while (i <= upperbound)
             {
-                sum = sum + c;
+                sum = sum + i;
                 count = count + 1;
+                i++;
             }
+
             average = sum / count;
             Console.WriteLine("The sum is " + Convert.ToString(sum));
             Console.WriteLine("The Average is " + Convert.ToString(average));
+            Console.ReadLine();
         }
         
     }
