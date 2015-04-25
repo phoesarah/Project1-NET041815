@@ -10,11 +10,18 @@ namespace SumandAverage
     {
         static void Main(string[] args)
         {
+           /* This is for Original program and Try 1
+            
             Console.WriteLine("Enter your high number");
             Double upperbound = Convert.ToDouble(Console.ReadLine());
             double sum = 0;
             double average = 0.0;
             double count = 0;
+            */
+
+
+
+
            /* this is original program 
             * 
             for (double i = 1; i <= upperbound; i++)
@@ -28,7 +35,12 @@ namespace SumandAverage
             Console.WriteLine("The Average is " + Convert.ToString(average));
             Console.ReadLine();  */
             
-            double i = 1;
+
+
+
+           /* This is Try 1
+            
+            * double i = 1;
             while (i <= upperbound)
             {
                 sum = sum + i;
@@ -40,6 +52,26 @@ namespace SumandAverage
             Console.WriteLine("The sum is " + Convert.ToString(sum));
             Console.WriteLine("The Average is " + Convert.ToString(average));
             Console.ReadLine();
+            */
+
+            /* This is Try 2
+             */
+
+            double count = 111;
+            double sum = 0;
+            double avg = 0.0;
+            while (count < 8900)
+            {
+                sum += count;
+                count += 1;
+                avg = sum / count;
+               
+            }
+
+            Console.WriteLine(Convert.ToString(avg));
+            
+            Console.ReadLine();
+
         }
         
     }
