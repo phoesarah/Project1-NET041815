@@ -25,6 +25,17 @@ namespace SumandAverage
             Console.WriteLine("The sum is " + Convert.ToString(sum));
             Console.WriteLine("The Average is " + Convert.ToString(average));
             Console.ReadLine();
+
+            Double c = 0;
+            while (c < upperbound)
+            {
+                sum = sum + c;
+                count = count + 1;
+            }
+            average = sum / count;
+            Console.WriteLine("The sum is " + Convert.ToString(sum));
+            Console.WriteLine("The Average is " + Convert.ToString(average));
         }
+        
     }
 }
