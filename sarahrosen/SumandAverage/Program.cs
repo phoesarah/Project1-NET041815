@@ -55,7 +55,7 @@ namespace SumandAverage
             */
 
             /* This is Try 2
-             */
+            
 
             double count = 111;
             double sum = 0;
@@ -71,7 +71,28 @@ namespace SumandAverage
             Console.WriteLine(Convert.ToString(avg));
             
             Console.ReadLine();
+              */
 
+
+
+
+            /* This is try 3 */
+            double avg = 0;
+            double sum = 0;
+            double num = 1;
+            double count = 0;
+            while (num < 101 )
+            {
+                if (num % 2 != 0)
+                {
+                    sum += num;
+                }
+                num +=1;
+                count += 1;
+            }
+            avg = sum / count;
+            Console.WriteLine(Convert.ToString(avg));
+            Console.ReadLine();
         }
         
     }
