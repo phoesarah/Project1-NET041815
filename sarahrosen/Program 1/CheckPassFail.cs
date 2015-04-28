@@ -14,21 +14,23 @@ namespace ConsoleApplication1
         {
             
            Console.WriteLine("Enter a grade");
-            
-            while (!string.IsNullOrEmpty(Console.ReadLine()))
+           int mark = Convert.ToInt32(Console.ReadLine());
+           while (!string.IsNullOrEmpty(mark.ToString()))
           
-            {
-                int mark = Convert.ToInt32(Console.ReadLine());
+            {                
                 if (mark >= 50)
                 {
                     Console.WriteLine("Pass");
-                   
-                }
+                    Console.WriteLine("Enter a grade");
+                    Console.ReadLine();
+                 }
                 else
                 {
                     Console.WriteLine("Fail");
-                   
-                 }
+                    Console.WriteLine("Enter a grade");
+                    Console.ReadLine();
+                }
+                
                 
             }
         }
