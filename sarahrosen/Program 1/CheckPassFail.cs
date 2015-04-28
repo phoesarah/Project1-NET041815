@@ -12,17 +12,25 @@ namespace ConsoleApplication1
         
         static void Main(string[] args)
         {
-            int mark = 0;
-
-            if (mark > 50)
+            
+           Console.WriteLine("Enter a grade");
+            
+            while (!string.IsNullOrEmpty(Console.ReadLine()))
+          
             {
-                Console.WriteLine("Pass");
+                int mark = Convert.ToInt32(Console.ReadLine());
+                if (mark >= 50)
+                {
+                    Console.WriteLine("Pass");
+                   
+                }
+                else
+                {
+                    Console.WriteLine("Fail");
+                   
+                 }
+                
             }
-            else
-            {
-                Console.WriteLine("Fail");
-            }
-
         }
     }
 }
