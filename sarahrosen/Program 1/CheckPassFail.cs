@@ -22,13 +22,14 @@ namespace ConsoleApplication1
                 {
                     Console.WriteLine("Pass");
                     Console.WriteLine("Enter a grade");
-                    Console.ReadLine();
+                    mark = Convert.ToInt32(Console.ReadLine());
                  }
                 else
                 {
                     Console.WriteLine("Fail");
                     Console.WriteLine("Enter a grade");
-                    Console.ReadLine();
+                    mark = Convert.ToInt32(Console.ReadLine());
+                    
                 }
                 
                 
