@@ -8,32 +8,45 @@ namespace ConsoleApplication1
 {
     class CheckPassFail
     {
-
+        //Write a program called CheckPassFail which prints "PASS" if the
+        //int variable mark is more than or equal to 50; or prints "FAIL" otherwise.
         
         static void Main(string[] args)
         {
             
-           Console.WriteLine("Enter a grade");
-           int mark = Convert.ToInt32(Console.ReadLine());
-           while (!string.IsNullOrEmpty(mark.ToString()))
-          
-            {                
-                if (mark >= 50)
+            bool quit = false;
+            while(!quit)
+            {
+             Console.WriteLine("Please enter a grade");
+             string mark = Console.ReadLine();
+             Console.WriteLine(Calculate(mark));
+            }
+
+           
+         }
+
+        private static string Calculate(string input)
+        {
+            try
+            {
+                int mark = Convert.ToInt32(input);
+                if (mark >=50)
                 {
-                    Console.WriteLine("Pass");
-                    Console.WriteLine("Enter a grade");
-                    mark = Convert.ToInt32(Console.ReadLine());
-                 }
-                else
+                    return "PASS";
+                }
+                else 
                 {
-                    Console.WriteLine("Fail");
-                    Console.WriteLine("Enter a grade");
-                    mark = Convert.ToInt32(Console.ReadLine());
-                    
+                    return "FAIL";
                 }
                 
-                
+            }
+            catch(FormatException e)
+            {
+                return ("I'm sorry, that input is unrecognized, please enter a number");
+               
             }
         }
+
+
     }
 }
